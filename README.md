@@ -45,7 +45,7 @@ y_mean=m*3+b
 ```
 
 ## Output:
-![best fit line](sam.png)
+![ml1](https://github.com/user-attachments/assets/b9a886f4-7130-4a4e-b741-e5a4d46e3700)
 
 
 ## Result:
