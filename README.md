@@ -24,28 +24,28 @@ RegisterNumber: 212223040147
 
 import numpy as np
 import matplotlib.pyplot as plt
-x = np.array(eval(input()))
-y = np.array(eval(input()))
-x_mean = np.mean(x)
-y_mean = np.mean(y)
-num,denom = 0,0
+x=np.array(eval(input()))
+y=np.array(eval(input()))
+x_mean=np.mean(x)
+y_mean=np.mean(y)
+num=0
+denom=0
 for i in range(len(x)):
-  num+=((x[i]-x_mean)*(y[i]-y_mean))
-  denom+=(x[i]-x_mean)**2
-m = num/denom
-b = y_mean-m*x_mean
+    num += (x[i]-x_mean)*(y[i]-y_mean)
+    denom += (x[i]-x_mean)**2
+    m=num/denom
+    b=y_mean-m*x_mean
 print(m,b)
-y_predicted=m*x+b
-print(y_predicted)
+y_pred=m*x+b
+print(y_pred)
 plt.scatter(x,y)
-plt.plot(x,y_predicted,color='red')
+plt.plot(x,y_pred,color='red')
 plt.show()
-y_mean=m*3+b
   
 ```
 
 ## Output:
-![ml1](https://github.com/user-attachments/assets/b9a886f4-7130-4a4e-b741-e5a4d46e3700)
+![1](https://github.com/user-attachments/assets/73419d21-51f0-4bdd-bfd2-acfe9a69a499)
 
 
 ## Result:
